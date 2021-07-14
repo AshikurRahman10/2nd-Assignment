@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common css */
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27px;
+  background-color: #e02c6d;
+  height: 40px;
+  width: 168px;
+}
+
+/* start top section */
+
+.top {
+  background-color: #2d25a0;
+  width: 100%;
+}
+
+.top-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 456px;
+  margin: 0 auto;
+  padding: 86px 124px 86px 156px;
+}
+
+.title h4 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 80px;
+}
+
+/* Transition */
+
+.image {
+  transition: transform 1s ease;
+}
+
+.top:hover .image {
+  transform: rotate(90deg);
+}
+
+/* start main  */
+
+#player {
+  margin-top: 70px;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  margin-bottom: 50px;
+}
+.player {
+  height: 426px;
+  width: 300px;
+  box-shadow: 0 0 5px 3px #ccc;
+}
+.player-info {
+  padding: 10px;
+}
+
+.img img {
+  width: 100%;
+}
+
+h3 {
+  line-height: 40px;
+}
+p small {
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Start Iframe */
+.iframe-item {
+  margin-bottom: 50px;
+}
+.iframe-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.iframe {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  height: 400px;
+}
+.iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 5px 5px #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Sponser start */
+
+.sponsors {
+  margin-top: 40px;
+}
+.sponsors-title {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 22px;
+}
+.sponser-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Fotter item start */
+
+.football-logo {
+  text-align: center;
+  margin-top: 160px;
+}
+.football {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* sosial icon  */
+
+.sosial-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.icon {
+  margin-right: 14px;
+}
+
+/* coppy writ */
+
+.copy-right {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.copy-right p small {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* media qery */
+
+/* for mobail device */
+
+@media only screen and (max-width: 667px) {
+  .top {
+    height: 695px;
+    width: 100%;
+  }
+  .top-main,
+  .sponser-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .title h4 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .top-main .image img {
+    width: 329px;
+    height: 259px;
+  }
+  .image {
+    margin-bottom: 62px;
+  }
+
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .football-logo {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .football {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .football img {
+    width: 271px;
+    height: 63px;
+  }
+}
